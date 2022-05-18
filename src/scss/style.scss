@@ -1,0 +1,13 @@
+$blue:rgb(21, 177, 255);
+$ahmar:rgb(255, 0, 0);
+p{
+    color: $blue;
+}
+
+@mixin title {
+    color: $ahmar;
+}
+
+h1{
+    @include title;
+}

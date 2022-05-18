@@ -1,0 +1,35 @@
+@use "fonts" as font;
+
+$primary: skyblue;
+$secondary: salmon;
+
+@mixin body-text{
+    font-family: font.$my-font;
+    color: black;
+    padding: 1rem;
+}
+
+@mixin images{
+    width: 90%;
+    height: 60%;
+    border: white 0.5rem solid;
+    box-shadow: 2px 2px 5px 1px gray;
+    margin: 0 auto;
+    display:block;
+}
+
+@mixin title{
+    width: 100%;
+    font-size: 2.4rem;
+    color: lighten($primary, 50%);
+    background-color: $secondary;
+    text-align: center;
+    padding: 0.5rem 1rem;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
